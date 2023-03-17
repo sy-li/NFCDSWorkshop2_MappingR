@@ -31,11 +31,11 @@ leaflet() %>%
                    group="Abovegroud Biomass")%>%
 # Layers control
   addLayersControl(
-    baseGroups = c("OSM (default)", "Streets", "Imagery"),
+    baseGroups = c("OSM (default)", "Imagery"),
     overlayGroups = c("Abovegroud Biomass", "Total Area","Mean Annual Rainfall"),
     options = layersControlOptions(collapsed = FALSE)
   ) %>%
-# hide the last two layers
+# Hide the last two layers
   hideGroup(c("Total Area","Mean Annual Rainfall"))
 ```
 
