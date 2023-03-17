@@ -1,3 +1,42 @@
 [<<< Previous](Part4.md) | [Home](../README.md)
 
 ## Resources
+
+To further explore or troubleshoot issues in map-making with R, consider taking advantage of these resources:
+
+- [tmap: get started!](https://r-tmap.github.io/tmap/articles/tmap-getstarted.html) - a tutorial for `tmap` package.
+
+- [Leaflet for R](https://rstudio.github.io/leaflet/) - a tutorial for `leaflet` package.
+
+- [ND Udemy](https://nd.udemy.com/) - a website offering thousands of professional development and training videos, freely accessible by all Notre Dame students.
+
+- [Stack Exchange](https://gis.stackexchange.com/) - excellent source for GIS-related troubleshooting.
+
+
+### Exercise Answer Key
+
+```diff
+leaflet() %>%
+# Base groups
+  addTiles(group = "OSM (default)") %>%
+  addProviderTiles('Esri.WorldImagery',group='Imagery') %>%
+# Overlay groups
+  addPolygons(data = sa_regions,color = "grey", weight = 1, smoothFactor = 0.5,
+              opacity = 1.0, fillOpacity = 0.3,
+              fillColor = ~colorQuantile("YlOrRd", AREA)(AREA),
+              group = "Total Area")%>%
+  addRasterImage(amz_mar, colors = pal, opacity = 0.8,group = "Mean Annual Rainfall") %>%
+  addCircleMarkers(data = site_df,~lon, ~lat, 
+                   popup = ~as.character(agb), label = ~as.character(agb),
+                   group="Abovegroud Biomass")%>%
+# Layers control
+  addLayersControl(
+    baseGroups = c("OSM (default)", "Streets", "Imagery"),
+    overlayGroups = c("Abovegroud Biomass", "Total Area","Mean Annual Rainfall"),
+    options = layersControlOptions(collapsed = FALSE)
+  ) %>%
+# hide the last two layers
+  hideGroup(c("Total Area","Mean Annual Rainfall"))
+```
+
+[<<< Previous](Part4.md) | [Home](../README.md)
