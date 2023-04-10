@@ -4,21 +4,21 @@
 
 To further explore or troubleshoot issues in map-making with R, consider taking advantage of these resources:
 
-- [tmap: get started!](https://r-tmap.github.io/tmap/articles/tmap-getstarted.html) - a tutorial for `tmap` package.
+1. [tmap: get started!](https://r-tmap.github.io/tmap/articles/tmap-getstarted.html) - a tutorial for `tmap` package.
 
-- [Leaflet for R](https://rstudio.github.io/leaflet/) - a tutorial for `leaflet` package.
+2. [Leaflet for R](https://rstudio.github.io/leaflet/) - a tutorial for `leaflet` package.
 
-- Helpful notes on **colour schemes and templates**:
+3. Helpful notes on **colour schemes and templates**:
   
-  [R colors cheat-sheet](http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf) - hundreds of color names can be used in R;
+    - [R colors cheat-sheet](http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf) - hundreds of color names can be used in R;
   
-  [R color palettes cheat-sheet](https://www.nceas.ucsb.edu/sites/default/files/2020-04/colorPaletteCheatsheet.pdf) - guidance on color representation with hex code and many other palettes;
+    - [R color palettes cheat-sheet](https://www.nceas.ucsb.edu/sites/default/files/2020-04/colorPaletteCheatsheet.pdf) - guidance on color representation with hex code and many other palettes;
   
-  [Color schemes for all people](https://personal.sron.nl/~pault/) - colors should be carefully chosen to be distinct for all people, including colour-blind readers. 
+    - [Color schemes for all people](https://personal.sron.nl/~pault/) - colors should be carefully chosen to be distinct for all people, including colour-blind readers. 
 
-- [ND Udemy](https://nd.udemy.com/) - a website offering thousands of professional development and training videos, freely accessible by all Notre Dame students.
+4. [ND Udemy](https://nd.udemy.com/) - a website offering thousands of professional development and training videos, freely accessible by all Notre Dame students.
 
-- [Stack Exchange](https://gis.stackexchange.com/) - excellent source for GIS-related troubleshooting.
+5. [Stack Exchange](https://gis.stackexchange.com/) - excellent source for GIS-related troubleshooting.
 
 
 ### Exercise Answer Key
