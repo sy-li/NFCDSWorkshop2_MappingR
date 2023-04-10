@@ -98,7 +98,7 @@ tm_shape(sa_regions) + tm_fill(col = "AREA", title = legend_title) + tm_borders(
 
 #### Color settings
 
-Here are simples example showing how to mannually change color settings. *For more suggestions on color scheme choosing, please refer to [Resources](Part4.md).*
+Here are simples example showing how to mannually change color settings. *For more suggestions on color scheme choosing, please refer to [Resources](Part5.md).*
 
 ```diff
 # manually set the breaks
